@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> item2 </title>
+<link rel="stylesheet" type="text/css" href="st.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a>Select Item</a>
+    <a href="item1.html">Item1</a>
+    <a href="item2.html">Item2</a>
+    <a href="item3.html">Item3</a>
+</div>
+
+<div class="header">
+    <img src="avatar.png" alt="Avatar" class="avatar">
+    <a class="logo">Logo </a>
+  <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+        
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+<div id="main">
+    <span style="color:black; text-align: center"><h1>Other Title</h1></span>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="4.jpg">
+          <img src="4.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="5.jpg">
+          <img src="5.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="6.jpg">
+          <img src="6.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+<div class="clearfix"></div>
+</div>
+</body>
+</html>
